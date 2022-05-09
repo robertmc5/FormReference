@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Form Reference</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1>HTML Form Reference Guide</h1>
+
+    <!-- Form Tags table -->
+    <table class="tags">
+        <caption><h2>Form Tags</h2></caption>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Element</th>
+                <th class="desc">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tag">&lt;form&gt;</td>
+                <td class="name">Form</td>
+                <td class="desc">It represents a document section containing interactive controls for submitting information.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;input&gt;</td>
+                <td class="name">Input</td>
+                <td class="desc">It is used to create interactive controls for web-based forms in order to accept data from the user.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;label&gt;</td>
+                <td class="name">Input Label</td>
+                <td class="desc">It provides identification for a specific &lt;input&gt; based on matching values of the &lt;input&gt;‘s [id] attribute and the &lt;label&gt;‘s [for] attribute.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;select&gt;</td>
+                <td class="name">Select</td>
+                <td class="desc">It is used to create a dropdown list. {&lt;option&gt;s are nested within it}</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;option&gt;</td>
+                <td class="name">Option</td>
+                <td class="desc">It is used to define an item contained in a &lt;select&gt; or a &lt;datalist&gt; element, and is nested within it. {Data List &lt;option&gt;s have no content}</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;datalist&gt;</td>
+                <td class="name">Data List</td>
+                <td class="desc">It contains a set of &lt;option&gt; elements that represent the permissible or recommended options available to choose from within other controls.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;textarea&gt;</td>
+                <td class="name">Text Area</td>
+                <td class="desc">It represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form Attributes table -->
+    <table class="attributes">
+        <caption><h2>Form Attributes</h2></caption>
+        <thead>
+            <tr>
+                <th>In Element Tag</th>
+                <th>Attribute</th>
+                <th>Name</th>
+                <th class="desc">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="element table-group-bottom" rowspan="2"><pre>&lt;form   &gt;</pre></td>
+                <td class="tag">action=" "</td>
+                <td class="name">Action</td>
+                <td class="desc">It determines where the &lt;form&gt; information is sent.  ie. the path to the server</td>
+            </tr>
+            <tr>
+
+                <td class="tag table-group-bottom">method=" "</td>
+                <td class="name">Method</td>
+                <td class="desc table-group-bottom">It is assigned a HTTP verb that is included in the HTTP request.  eg. GET or POST</td>
+            </tr>
+            <tr>
+                <td class="element table-group-top table-group-bottom" rowspan="7"><pre>&lt;input   &gt;</pre></td>
+                <td class="tag table-group-top">type=" "</td>
+                <td class="name">Type</td>
+                <td class="desc table-group-top">It determines how it renders on the web page and what kind of data the &lt;input&gt; can accept.  eg. text or number</td>
+            </tr>
+            <tr>
+
+                <td class="tag">name=" "</td>
+                <td class="name">Name</td>
+                <td class="desc">A name is required for a submittal of the &lt;input&gt; field.  ie. text with "name=value" is sent with [value] being the user input</td>
+            </tr>
+            <tr>
+
+                <td class="tag">id=" "</td>
+                <td class="name">ID</td>
+                <td class="desc">It identifies the input, so that it's paired label's for=" " attribute can pair to the &lt;input&gt; or &lt;select&gt; with that ID.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">value=" "</td>
+                <td class="name">Value</td>
+                <td class="desc">It can assign a default value as a pre-filled text field or an assigned value for a radio button or checkbox.</td>
+            </tr>
+            <tr>
+
+                <td class="tag" style="color: lightgray;">placeholder=" "</td>
+                <td class="name">Placeholder</td>
+                <td class="desc">It can provide a hint to the user of what can be entered in the field. It is in gray and disappears/reappears with input.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">list=" "</td>
+                <td class="name">Data List</td>
+                <td class="desc">It pairs an &lt;input&gt; with a &lt;datalist&gt; [id]. As the user types a list is updated to show options that best match the datalist options.</td>
+            </tr>
+            <tr>
+
+                <td class="tag table-group-bottom">required</td>
+                <td class="name">Required</td>
+                <td class="desc table-group-bottom">It is a Boolean attribute indicating the user must specify a value for the form to be submitted. The user would see a message.</td>
+            </tr>
+            <tr>
+                <td class="element table-group-top table-group-bottom"><pre>&lt;label   &gt;</pre></td>
+                <td class="tag table-group-top table-group-bottom">for=" "</td>
+                <td class="name">For</td>
+                <td class="desc table-group-top table-group-bottom">It declares the [id] of the paired &lt;input&gt; or &lt;select&gt; for that &lt;label&gt;. It's not needed if the &lt;label&gt; is wrapped around the &lt;input&gt;.</td>
+            </tr>
+            <tr>
+                <td class="element table-group-top" rowspan="2"><pre>&lt;select   &gt;</pre></td>
+                <td class="tag table-group-top">name=" "</td>
+                <td class="name">Name</td>
+                <td class="desc table-group-top">Attribute has the same purpose and description as for the &lt;input&gt; element {above}.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">id=" "</td>
+                <td class="name">ID</td>
+                <td class="desc">Attribute has the same purpose and description as for the &lt;input&gt; element {above}.</td>
+            </tr>
+            <tr>
+                <td class="element table-group-bottom" style="text-align: right;"><pre>&lt;option   &gt;</pre></td>
+                <td class="tag table-group-bottom">value=" "</td>
+                <td class="name">Value</td>
+                <td class="desc table-group-bottom">It sets an assigned value for a drop-down list or data list. {This may be different than the visible caption}</td>
+            </tr>
+            <tr>
+                <td class="element table-group-top" rowspan="4"><pre>&lt;textarea   &gt;</pre></td>
+                <td class="tag table-group-top">name=" "</td>
+                <td class="name">Name</td>
+                <td class="desc table-group-top">Attribute has the same purpose and description as for the &lt;input&gt; element {above}.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">id=" "</td>
+                <td class="name">ID</td>
+                <td class="desc">Attribute has the same purpose and description as for the &lt;input&gt; element {above}.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">rows=" "</td>
+                <td class="name">Rows</td>
+                <td class="desc">It determines the height of the element.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">cols=" "</td>
+                <td class="name">Columns</td>
+                <td class="desc">It determines the width of the element.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Types of Input table -->
+    <table class="input-types">
+        <caption><h2>Types of Input</h2></caption>
+        <thead>
+            <tr>
+                <th>Element & Attribute</th>
+                <th>Value</th>
+                <th>Name</th>
+                <th class="desc">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="element" rowspan="8"><pre>&lt;input type=" "&gt;</pre></td>
+                <td class="tag">"text"</td>
+                <td class="name">Text</td>
+                <td class="desc">It renders a text field that users can type into. This is the default.
+                    <br>Constraint validations minlength=" " and maxlength=" " can message the user and prevent form submission.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">"number"</td>
+                <td class="name">Number</td>
+                <td class="desc">It allows the user to enter only numbers and a few special characters. It has built-in number validation.
+                    <br>Constraint validations min=" " max=" " step=" " can message the user and prevent form submission.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">"date"</td>
+                <td class="name">Date</td>
+                <td class="desc">It let the user enter a date, either with a textbox that validates the input or a special date picker interface.
+                    <br>Constraint validations min=" " max=" " step=" " can message the user and prevent form submission.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">"password"</td>
+                <td class="name">Password</td>
+                <td class="desc">It renders a single row input field and censors the sensitive text by displaying an asterisk (*) or a dot (•) instead.
+                    <br>When the form is submitted, the actual value of the text is sent.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">"checkbox"</td>
+                <td class="name">Checkbox</td>
+                <td class="desc">It renders a single checkbox item. A group of related checkboxes should all use the same [name] attribute.
+                    <br>If [checked] is added to the &lt;input&gt; tag it will default to being checked initially.</td>
+            </tr>
+            <tr>
+
+                <td class="tag">"radio"</td>
+                <td class="name">Radio Button</td>
+                <td class="desc">It renders a single radio button. Related radio groups use the same [name] attribute but only one from a group can be chosen.
+                    <br>If [checked] is added to the &lt;input&gt; tag it will default to being checked initially. {This creates a required response}</td>
+            </tr>
+            <tr>
+
+                <td class="tag">"submit"</td>
+                <td class="name">Submit Button</td>
+                <td class="desc">It is rendered as a button. When the click event occurs, the user agent attempts to submit the form to the server.
+                    <br>It can use value=" " for the button caption or it will use the user agent's default. {probably "Submit"}</td>
+            </tr>
+            <tr>
+
+                <td class="tag">"range"</td>
+                <td class="name">Range Slider</td>
+                <td class="desc">It renders a visual widget to adjust between a minimum and a maximum value. The values are not displayed.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

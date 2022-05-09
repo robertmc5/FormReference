@@ -1,0 +1,90 @@
+/* Web Font */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v47/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiZQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Universal Style */
+* {
+    margin: 0;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+body {
+    background-color: royalblue;
+    color: gold;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+h2 {
+    color: white;
+}
+
+/* Tables */
+table {
+    margin: 0.5em auto;
+    border: 2px solid white;
+    text-align: center;
+}
+
+th {
+    padding: 0.5em 1em;
+    text-decoration: underline;
+}
+
+td {
+    padding: 0 1em;
+}
+
+td.tag {
+    color: white;
+}
+
+.tags .tag,     /* Key columns with syntax formatting */
+.attributes .tag,
+.input-types .tag {
+    font-family: monospace;
+    background-color: darkslategray;
+}
+
+td.name {
+    border: 1px solid gold;
+}
+
+.desc {
+    text-align: left;
+}
+
+/* Second table */
+.attributes {
+    margin-top: 2em;
+    background-color:  forestgreen;
+}
+
+.element {
+    color: black;
+}
+
+.table-group-bottom {
+    border-bottom: 1px dashed gold;
+}
+
+.table-group-top {
+    border-top: 1px dashed gold;
+}
+
+/* Third table */
+.input-types {
+    margin-top: 2em;
+    background-color: saddlebrown;
+    margin-bottom: 2em;
+}
